@@ -5,6 +5,7 @@ Border is created inside the element, where as outline is created outside the el
 
 
 2.Box model is css ?
+
 The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
 Content - The content of the box, where text and images appear
 Padding - Clears an area around the content. The padding is transparent
@@ -24,5 +25,6 @@ Total element height = height + top padding + bottom padding + top border + bott
 3.psedo Classes?
 
 4. Border vs outline ?
+
 Border is created inside the element, where as outline is created outside the element. So border is computed along with the width and height of the element, while outline draws outside the element.
 
