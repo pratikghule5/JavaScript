@@ -140,3 +140,26 @@ But actually, best practice is to wrap any service properties/methods in a compo
 **20.What is the difference between declarations and entryComponents?**
 
 entryComponents are used to register components for offline computation in a module. These components are referenced here as they not referenced anywhere else in HTML template. Declarations are used to make Directives(components, pipes etc.) in a specific module.
+
+**Methods of improving the performance**
+1.Using AoT Compilation.
+2.Using OnPush Change Detection Strategy.
+3.Using Pure Pipes.
+4.Unsubscribe from Observables.
+5.Lazy Loading.
+6.Use trackBy option for For Loop.
+7.Avoid computation in template files.
+8.Usage of Web Workers.
+
+https://www.xenonstack.com/blog/performance-optimization-in-angular
+
+**Secure Angular Application**
+1.Prevent an application from Cross-Site Scripting (XSS) 
+2.Use Route guards when required.
+3.Implement CSP (Content Security Policies).
+4.Do not use DOM's APIs directly.
+5.Prevent CSRF (Cross-site request forgery).
+6.Prevent Cross-Site Script Inclusion (XSSI).
+7.Keep current with the latest Angular library releases	
+8.Don't modify your copy of Angular	Private.
+9.Avoid Angular APIs marked in the documentation as "Security Risk
