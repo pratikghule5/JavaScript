@@ -1,23 +1,21 @@
 **1. What is two-way binding in Angular?**
 
-  Two-way binding gives components in your application a way to share data.
+  Two-way binding gives components in your application a way to share data.\
   Use two-way binding to listen for events and update values simultaneously between parent and child components.
 
 
 **2.What are directives?**
 
-  Directives are classes that add additional behavior to elements in your Angular applications. 
+  Directives are classes that add additional behavior to elements in your Angular applications.\
   Use Angular's built-in directives to manage forms, lists, styles, and what users see.
 
 **3. What are the types of directives?**
 
   There are three types of Angular directives are as follows:
 
-    1.Component: Used with a template. This type of directive is the most common directive type.
-
-    2.Attribute directives : Change the appearance or behavior of an element, component, or another directive.
-
-    3.Structural directives:Change the DOM layout by adding and removing DOM elements.
+    1.Component: Used with a template. This type of directive is the most common directive type.\
+    2.Attribute directives : Change the appearance or behavior of an element, component, or another directive.\
+    3.Structural directives:Change the DOM layout by adding and removing DOM elements.\
 
 **4. Is Component a directive?**
 
@@ -142,24 +140,41 @@ But actually, best practice is to wrap any service properties/methods in a compo
 entryComponents are used to register components for offline computation in a module. These components are referenced here as they not referenced anywhere else in HTML template. Declarations are used to make Directives(components, pipes etc.) in a specific module.
 
 **Methods of improving the performance**
-1.Using AoT Compilation.
-2.Using OnPush Change Detection Strategy.
-3.Using Pure Pipes.
-4.Unsubscribe from Observables.
-5.Lazy Loading.
-6.Use trackBy option for For Loop.
-7.Avoid computation in template files.
-8.Usage of Web Workers.
+
+1.Using AoT Compilation.\
+2.Using OnPush Change Detection Strategy.\
+3.Using Pure Pipes.\
+4.Unsubscribe from Observables.\
+5.Lazy Loading.\
+6.Use trackBy option for For Loop.\
+7.Avoid computation in template files.\
+8.Usage of Web Workers.\
 
 https://www.xenonstack.com/blog/performance-optimization-in-angular
 
 **Secure Angular Application**
-1.Prevent an application from Cross-Site Scripting (XSS) 
-2.Use Route guards when required.
-3.Implement CSP (Content Security Policies).
-4.Do not use DOM's APIs directly.
-5.Prevent CSRF (Cross-site request forgery).
-6.Prevent Cross-Site Script Inclusion (XSSI).
-7.Keep current with the latest Angular library releases	
-8.Don't modify your copy of Angular	Private.
-9.Avoid Angular APIs marked in the documentation as "Security Risk
+
+1.Prevent an application from Cross-Site Scripting (XSS)\
+2.Use Route guards when required.\
+3.Implement CSP (Content Security Policies).\
+4.Do not use DOM's APIs directly.\
+5.Prevent CSRF (Cross-site request forgery).\
+6.Prevent Cross-Site Script Inclusion (XSSI).\
+7.Keep current with the latest Angular library releases.\
+8.Don't modify your copy of Angular	Private.\
+9.Avoid Angular APIs marked in the documentation as "Security Risk".\
+
+**What are template statement in Angular?**
+Template statements are methods or properties that you can use in your HTML to respond to user events.\
+With template statements, your application can engage users through actions such as displaying dynamic content or submitting forms.
+
+**How to send object in router params?**
+
+this.router.navigateByUrl('/authenticate/username', {
+    state: {user: new User(), foo: 'bar'}
+});
+
+**what is the intercpetor interface ?**
+interface HttpInterceptor {
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>
+}
