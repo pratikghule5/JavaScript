@@ -117,8 +117,15 @@ ngOnInit() will be called when it finishes rendering the component. So the first
 
 No its not mandatory. you don't want to use then no need to implement but if you want to do something when component render then you have only one place for do constructor.
 
-21. What are sass files?
-22. How to generate components, services and modules using angular-cli? 
+**21. What are sass files?**\
+
+SASS (Syntactically Awesome Stylesheets) is a CSS pre-processor that lets you use variables, mathematical operations, mixins, loops, functions, imports, and other interesting functionalities that make writing CSS much more powerful.\
+
+**22. How to generate components, services and modules using angular-cli?**\
+ ng genarte componet
+ ng genrate module
+ ng genrate services
+    
 23. forroot vs forchild
 24. What is NGRX ?
 25. Observable vs Promise
@@ -170,11 +177,26 @@ With template statements, your application can engage users through actions such
 
 **How to send object in router params?**
 
-this.router.navigateByUrl('/authenticate/username', {
+``` this.router.navigateByUrl('/authenticate/username', {
     state: {user: new User(), foo: 'bar'}
 });
+```
 
-**what is the intercpetor interface ?**
+**what is the intercpetor interface ?**\
+```
 interface HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>
 }
+```
+**What is webpack and why use it?**
+Webpack is a tool that lets you compile JavaScript modules, also known as module bundler.\
+Given a large number of files, it generates a single file (or a few files) that run your app.\
+It can perform many operations: helps you bundle your resources. watches for changes and re-runs the tasks.\
+
+**Angular takes the following steps to bootstrap the application:**
+1.Load index. html.
+2.Load Angular, Other Libraries, and App Code.
+3.Execute main. ts File.
+4.Load App-Level Module.
+5.Load App-Level Component.
+6.Process Template.
