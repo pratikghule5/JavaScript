@@ -33,3 +33,24 @@ function sort(arr){
 console.log(sort([2,6,3,1,99,33]));
 
 ```
+``var numbers = [1, 2, 3, 4];
+var colors = ["red", "green", "blue", "purple"];
+
+
+for(let i=0;i<numbers.length;i++){
+  var style= "style='color:"+colors[i]+"'";
+  document.write("<h1 "+style+">"+numbers[i]+"</h1>");
+} 
+```
+```
+var name="pratik";
+
+var rev='';
+
+
+for(var i=name.length-1;i>=length;i--){
+   rev+= name[i]
+}
+
+console.log(rev);
+```
