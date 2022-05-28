@@ -1,19 +1,23 @@
 **1.Hoisting**
+
 Hoisting is JS's default behavior of defining all the declarations at the top of the scope before code execution.\
 One of the benefits of hoisting is that it enables us to call functions before they appear in the code.\ 
 JavaScript only hoists declarations, not initializations.\
 
 **2.Closures**
+
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function.
 The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
 
 **3.let var const**
+
 `const` is a signal that the identifier won't be reassigned.\ 
 `let` is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm.\
 It also signals that the variable will be used only in the block it's defined in, which is not always the entire containing function.\
 
 **4.Event bubbling and how to prevent it?**\
+
 With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.\
 With capturing, the event is first captured by the outermost element and propagated to the inner elements.\
 
@@ -21,6 +25,7 @@ With capturing, the event is first captured by the outermost element and propaga
 -Bubbling/capturing can be stopped by `event.cancelBubble=true` (IE) or `event.stopPropagation()` for other browsers. 
 
 **5.What is the difference between event preventDefault and event stopPropagation?**\
+
 preventDefault() – It stops the browsers default behaviour.\
 event.stopPropagation() – It prevents the event from propagating (or “bubbling up”) the DOM.\
 
@@ -51,6 +56,7 @@ Arrow function syntax automatically binds “this” to the surrounding code's c
 Writing the arrow => is more flexible as compared with the writing function keyword.\
 
 **7. Function and function expression ?**
+
 9. Bind call and apply
 Ans: https://medium.com/@rlynjb/js-interview-question-explain-function-prototype-bind-bbdaed41bd89
 9. Mutability and immutability
@@ -111,3 +117,5 @@ Ans: https://digitalfortress.tech/js/promises-vs-callbacks/
 Ans: https://medium.com/@muthuks/difference-between-es-5-and-es-6-e993c7ab0a70
 44. What is local storage method ?
 45.cache method
+46.what is callback hell ?
+
