@@ -205,3 +205,14 @@ It can perform many operations: helps you bundle your resources. watches for cha
 
 **content projection in angular ?**
 
+**ng-template**
+ng-template is an Angular element that is used for rendering HTML in a template. However, it is not rendered directly on DOM. If you include an ng-template tag to a template, the tag and the content inside it will be replaced by comment upon render.
+
+**ng-content**
+
+The ng-content is used when we want to insert the content dynamically inside the component that helps to increase component reusability. Using ng-content we can pass content inside the component selector and when angular parses that content that appears at the place of ng-content
+
+**ng-container**
+
+ng-container allows us to create a division or section in a template without introducing a new HTML element. The ng-container does not render in the DOM, but content inside it is rendered. ng-container is not a directive, component, class, or interface, but just a syntax element. Container's content.
+
