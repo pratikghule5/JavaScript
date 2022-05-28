@@ -34,7 +34,7 @@ console.log(sort([2,6,3,1,99,33]));
 
 ```
 
-```
+```javascript
 var numbers = [1, 2, 3, 4];
 var colors = ["red", "green", "blue", "purple"];
 
@@ -46,7 +46,7 @@ for(let i=0;i<numbers.length;i++){
 
 ```
 
-```
+```javascript
 var name="pratik";
 var rev='';
 
@@ -56,7 +56,7 @@ for(var i=name.length-1;i>=length;i--){
 console.log(rev);
 ```
 
-```
+```javascript
 for(var i = 0; i< 6; i++) 
 {
   setTimeout(function() { 
@@ -64,7 +64,7 @@ for(var i = 0; i< 6; i++)
   });
 }
            
-```
+```javascript
 console.log(a); 
 a = 10; 
 var a = 5;
