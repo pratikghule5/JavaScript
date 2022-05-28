@@ -32,7 +32,9 @@
  A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe.
 
  An impure pipe is called for every change detection cycle no matter whether the value or parameter(s)
+ 
 **7. How to send data from parent component to a child component?**
+
 Pass data from parent to child component using @Input() decorator, which allows data to pass through templates.
 
 **8. How to send data from a child component to the parent component?**
@@ -122,9 +124,9 @@ No its not mandatory. you don't want to use then no need to implement but if you
 SASS (Syntactically Awesome Stylesheets) is a CSS pre-processor that lets you use variables, mathematical operations, mixins, loops, functions, imports, and other interesting functionalities that make writing CSS much more powerful.\
 
 **22. How to generate components, services and modules using angular-cli?**\
- ng genarte componet
- ng genrate module
- ng genrate services
+ ng genarte componet\
+ ng genrate module\
+ ng genrate services\
     
 23. forroot vs forchild
 24. What is NGRX ?
@@ -200,3 +202,6 @@ It can perform many operations: helps you bundle your resources. watches for cha
 4.Load App-Level Module.
 5.Load App-Level Component.
 6.Process Template.
+
+**content projection in angular ?**
+
