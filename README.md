@@ -33,6 +33,7 @@ function sort(arr){
 console.log(sort([2,6,3,1,99,33]));
 
 ```
+
 ```
 var numbers = [1, 2, 3, 4];
 var colors = ["red", "green", "blue", "purple"];
@@ -44,6 +45,7 @@ for(let i=0;i<numbers.length;i++){
 }
 
 ```
+
 ```
 var name="pratik";
 var rev='';
@@ -52,4 +54,21 @@ for(var i=name.length-1;i>=length;i--){
    rev+= name[i]
 }
 console.log(rev);
+```
+
+```
+for(var i = 0; i< 6; i++) 
+{
+  setTimeout(function() { 
+  console.log(i); 
+  });
+}
+           
+```
+console.log(a); 
+a = 10; 
+var a = 5;
+```
+
+
 ```
