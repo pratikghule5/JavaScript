@@ -2,7 +2,7 @@
 
 #Revere String program in Java Script
 
-``` javascript
+``` js
 function reverseString(str){
   var reverseStr = '';
 for(var i = str.length - 1; i >= 0; i--){
@@ -17,7 +17,7 @@ console.log(reverseString("pratik"));
 
 #Sort a array using custom function
 
-```javascript
+```js
 function sort(arr){
   for(var i=0;i<= arr.length;i++){
     for(var j=i;j<=arr.length;j++){
@@ -34,7 +34,7 @@ console.log(sort([2,6,3,1,99,33]));
 
 ```
 
-```javascript
+```js
 var numbers = [1, 2, 3, 4];
 var colors = ["red", "green", "blue", "purple"];
 
@@ -46,7 +46,7 @@ for(let i=0;i<numbers.length;i++){
 
 ```
 
-```javascript
+```js
 var name="pratik";
 var rev='';
 
@@ -56,7 +56,7 @@ for(var i=name.length-1;i>=length;i--){
 console.log(rev);
 ```
 
-```javascript
+```js
 for(var i = 0; i< 6; i++) 
 {
   setTimeout(function() { 
@@ -64,11 +64,24 @@ for(var i = 0; i< 6; i++)
   });
 }
            
-```javascript
+```js
 console.log(a); 
 a = 10; 
 var a = 5;
 ```
 
+
+```js
+console.log(1);
+setTimeout(() => {
+  console.log(2);},0);
+const promise1 = new Promise((resolve, reject) => {
+console.log(3);
+    resolve('success')
+});
+promise1.then(() => {
+console.log(4);
+});
+console.log(5); 
 
 ```
