@@ -205,6 +205,8 @@ It can perform many operations: helps you bundle your resources. watches for cha
 
 **content projection in angular ?**
 
+Content projection is a pattern in which you insert, or project, the content you want to use inside another component. For example, you could have a Card component that accepts content provided by another component.
+
 **ng-template**
 ng-template is an Angular element that is used for rendering HTML in a template. However, it is not rendered directly on DOM. If you include an ng-template tag to a template, the tag and the content inside it will be replaced by comment upon render.
 
@@ -216,3 +218,5 @@ The ng-content is used when we want to insert the content dynamically inside the
 
 ng-container allows us to create a division or section in a template without introducing a new HTML element. The ng-container does not render in the DOM, but content inside it is rendered. ng-container is not a directive, component, class, or interface, but just a syntax element. Container's content.
 
+**Dom Santization**
+DomSanitizer, a service of Angular helps to prevent attackers from injecting malicious client-side scripts into web pages, which is often referred to as Cross-site Scripting or XSS.
