@@ -220,3 +220,8 @@ ng-container allows us to create a division or section in a template without int
 
 **Dom Santization**
 DomSanitizer, a service of Angular helps to prevent attackers from injecting malicious client-side scripts into web pages, which is often referred to as Cross-site Scripting or XSS.
+
+**Tree shaking**
+Tree shaking is a step in a build process that removes unused code so the application becomes smaller. It can be visualised as shaking a physical tree causing dead branches and leaves to fall off.
+
+One of the primary ways Angular looks for code to shake is by import paths. 
