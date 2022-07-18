@@ -70,6 +70,25 @@ a = 10;
 var a = 5;
 ```
 
+let a = [1,3,5,7,8,9,11];
+let b = [0, 1, 3];
+
+// a = [1,5,8,11]
+// a.pop(0);
+var j=0;
+for(var i=0;i<b.length;i++){
+  // console.log(b[i]);
+  
+  a.splice(b[i] - j,1);
+  // a.indexOf(11);
+  // a.remove(b[i])
+  // console.log(a);
+// a.shift(b[i]);
+  j =j+1;
+}
+
+ console.log(a);
+
 
 ```js
 console.log(1);
