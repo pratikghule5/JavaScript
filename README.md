@@ -1,17 +1,25 @@
-##JavaScript Snippets
+JavaScript Snippets
 
-#Revere String program in Java Script
+Revere String program in Java Script
 
 ``` js
+`Solution - 1`
 function reverseString(str){
   var reverseStr = '';
-for(var i = str.length - 1; i >= 0; i--){
- reverseStr += str.charAt(i);
-}
-console.log(reverseStr);
-return reverseStr;
+  for(var i = str.length - 1; i >= 0; i--){
+   reverseStr += str.charAt(i);
+  }
+  return reverseStr;
 }
 console.log(reverseString("pratik"));
+
+`Solution - 2`
+var name="pratik";
+var rev='';
+for(var i=name.length-1;i>=length;i--){
+   rev+= name[i]
+}
+console.log(rev);
 ```
 
 
@@ -47,50 +55,47 @@ for(let i=0;i<numbers.length;i++){
 ```
 
 ```js
-var name="pratik";
-var rev='';
+**Delete element by provided array index**
+let a = [1,3,5,7,8,9,11];
+let b = [0, 1, 3];
 
-for(var i=name.length-1;i>=length;i--){
-   rev+= name[i]
+var j=0;
+for(var i=0;i<b.length;i++){
+  a.splice(b[i] - j,1);
+  j =j+1;
 }
-console.log(rev);
+
+console.log(a);
 ```
 
+Output
+
 ```js
-for(var i = 0; i< 6; i++) 
+1. for(var i = 0; i< 6; i++) 
 {
   setTimeout(function() { 
   console.log(i); 
   });
 }
-           
-```js
+
+//Output
+6
+6
+6
+6
+6
+6
+
+2.
 console.log(a); 
 a = 10; 
 var a = 5;
-```
 
-let a = [1,3,5,7,8,9,11];
-let b = [0, 1, 3];
-
-// a = [1,5,8,11]
-// a.pop(0);
-var j=0;
-for(var i=0;i<b.length;i++){
-  // console.log(b[i]);
-  
-  a.splice(b[i] - j,1);
-  // a.indexOf(11);
-  // a.remove(b[i])
-  // console.log(a);
-// a.shift(b[i]);
-  j =j+1;
-}
-
- console.log(a);
+//Output
+undefined
 
 
-```js
+3.
 console.log(1);
 setTimeout(() => {
   console.log(2);},0);
@@ -102,5 +107,23 @@ promise1.then(() => {
 console.log(4);
 });
 console.log(5); 
+
+//Output
+1
+3
+5
+4
+2
+
+4.const a = 5;
+{
+  const a = 4;
+  console.log(a);
+}
+console.log(a);
+
+//Output
+4
+5
 
 ```
