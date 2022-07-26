@@ -126,4 +126,45 @@ console.log(a);
 4
 5
 
-```
+```ts
+
+**Type Script**
+/ Suppose this is a requirement in a project, what will you do?
+// CREATE AN INTERFACE NAMED ‘PERSON’ HAVING 3 PROPERTIES: fname, lname, title and 1 getter that will return the full name. CREATE 2 CLASSES NAMED ‘EMP’ & ‘CUST’ FROM THIS INTERFACE: class Emp; class Cust
+// Create 1 Employee using the "Emp" class
+// Create 1 Customer using the "Cust" class
+  
+  interface Person{
+      fname:string;
+      lname:string;
+      title:string;
+      getName():string;
+  }
+
+  class Emp{
+    fname:string;
+    lname:string;
+    title:string;
+    constructor(title:string,fname: string, lname:string,) {
+        this.fname = fname;
+        this.lname=lname;
+        this.title =title;
+    }  
+
+    getName(): string {
+        return `${this.title} ${this.fname} ${this.lname}`;
+    }
+  }
+  
+
+ class Customer extends Emp{
+    constructor(title:string,fname: string, lname:string) {
+         super(title,fname,lname);
+    } 
+}
+    
+const emp = new Emp("Mr",'Pratik','Ghule');
+const cust = new Customer ("Mr",'Vaibhav','Iname');
+
+console.warn("From Employee",emp.getName());
+console.warn("From Customer",cust.getName());
